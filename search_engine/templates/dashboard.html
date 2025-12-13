@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecurity Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=12">
+    <script>
+        // Random background selection
+        const randomBg = Math.floor(Math.random() * 5) + 1;
+        document.documentElement.style.setProperty('--random-bg', `url('/static/backgrounds/${randomBg}background.png')`);
+    </script>
+    <script src="{{ url_for('static', filename='app.js') }}?v=14"></script>
+</head>
+<body>
+    <!-- Bento Grid Container -->
+    <div class="bento-container">
+        
+        <!-- Case 0: Empty (Top Left) -->
+        <div class="bento-card empty-card glass">
+            <div class="card-inner">
+                <div class="empty-state">
+                    <div class="empty-icon">⚡</div>
+                    <p>À venir...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 2: Search Bar (Top Center) -->
+        <div class="bento-card search-card glass">
+            <div class="card-inner">
+                <div class="search-wrapper">
+                    <div class="search-icon-premium">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <div class="search-tags-container" id="search-tags-container"></div>
+                    <div class="search-input-wrapper">
+                        <input type="text" id="search-input" autocomplete="off" autofocus>
+                        <div class="search-placeholder" id="search-placeholder">
+                            <span class="placeholder-static">Rechercher</span>
+                            <span class="placeholder-suggestions" id="placeholder-suggestions">
+                                <span class="suggestion-word active">protocoles</span>
+                                <span class="suggestion-word">configurations</span>
+                                <span class="suggestion-word">scripts</span>
+                                <span class="suggestion-word">documentation</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="search-results" class="search-results"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 3: Stats (Top Right) -->
+        <div class="bento-card stats-card glass">
+            <div class="card-inner">
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-icon">📄</div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="total-files">0</div>
+                            <div class="stat-label">Fichiers</div>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">📁</div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="total-folders">0</div>
+                            <div class="stat-label">Dossiers</div>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">💾</div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="total-size">0 KB</div>
+                            <div class="stat-label">Taille</div>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">🌐</div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="total-protocols">0</div>
+                            <div class="stat-label">Protocoles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 1: Map (Main Canvas - Bottom Left, Large) -->
+        <div class="bento-card map-card glass">
+            <div class="card-inner">
+                <div id="canvas" class="canvas">
+                    <div id="map-container" class="map-container"></div>
+                    <div class="map-controls">
+                        <button onclick="resetView()" class="ctrl-btn" title="Reset View">
+                            <span>⌂</span>
+                        </button>
+                        <button onclick="zoomIn()" class="ctrl-btn" title="Zoom In">
+                            <span>+</span>
+                        </button>
+                        <button onclick="zoomOut()" class="ctrl-btn" title="Zoom Out">
+                            <span>−</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case 4: Best Occurrence (Bottom Right) -->
+        <div class="bento-card best-occurrence-card glass">
+            <div class="card-inner">
+                <h2 class="card-title">🏆 Top Fichiers</h2>
+                <div id="best-occurrence-list" class="best-occurrence-list">
+                    <div class="empty-state-mini">
+                        <p>Lancez une recherche pour voir les fichiers les plus pertinents</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Animated Background Gradients -->
+    <div class="bg-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}?v=10"></script>
+</body>
+</html>
