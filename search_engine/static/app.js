@@ -15,6 +15,7 @@ let searchScores = {}; // Track cumulative search scores for files
 let searchTags = []; // Array of search keywords/tags
 window.currentHighlightedPath = null; // Track currently highlighted path
 window.lastTopPath = null; // Track last top file to detect changes
+window.manualFileSelection = false; // Track if user manually selected a file
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -34,13 +35,12 @@ function setupGlobalKeyboardFocus() {
     // Focus on page load
     searchInput.focus();
     
-    // Capture all keyboard input anywhere on the page (except when typing in other inputs or detail panel)
+    // Capture all keyboard input anywhere on the page (except when typing in other inputs)
     document.addEventListener('keydown', (e) => {
         const activeElement = document.activeElement;
         
-        // Don't capture if we're in the detail panel or already in search
+        // Don't capture if we're already in search
         if (activeElement === searchInput) return;
-        if (document.getElementById('detail-panel').classList.contains('hidden') === false) return;
         
         // Don't capture special keys
         if (e.ctrlKey || e.metaKey || e.altKey) return;
@@ -54,7 +54,6 @@ function setupGlobalKeyboardFocus() {
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.node') && 
             !e.target.closest('.ctrl-btn') && 
-            !e.target.closest('#detail-panel') &&
             !e.target.closest('.search-result-item')) {
             searchInput.focus();
         }
@@ -104,6 +103,7 @@ function performSearchWithTags() {
         searchScores = {};
         window.currentHighlightedPath = null;
         window.lastTopPath = null;
+        window.manualFileSelection = false; // Reset manual selection
         document.querySelectorAll('.node.highlighted').forEach(node => {
             node.classList.remove('highlighted');
         });
@@ -917,9 +917,39 @@ async function performSearch(query) {
     }
 }
 
+// Extract banner image URL from markdown content
+function extractBannerImage(content) {
+    if (!content) return null;
+    
+    // Look for markdown image syntax with 'banner' in the alt text or filename
+    // Pattern: ![...banner...](url) or ![banner](url)
+    const bannerRegex = /!\[.*banner.*\]\(([^)]+)\)/i;
+    const match = content.match(bannerRegex);
+    
+    if (match && match[1]) {
+        let imageUrl = match[1];
+        
+        // Convert GitHub blob URLs to raw URLs
+        // From: https://github.com/user/repo/blob/main/path/image.png
+        // To: https://raw.githubusercontent.com/user/repo/main/path/image.png
+        imageUrl = imageUrl.replace(
+            /github\.com\/([^\/]+)\/([^\/]+)\/blob\/([^\/]+)\//,
+            'raw.githubusercontent.com/$1/$2/$3/'
+        );
+        
+        console.log('Banner image found:', imageUrl);
+        console.log('⚠️ If image does not load, check if it\'s blocked by an ad blocker (look for ERR_BLOCKED_BY_CLIENT in console)');
+        return imageUrl;
+    }
+    
+    console.log('No banner image found in content');
+    return null;
+}
+
 // Update best occurrence list
-function updateBestOccurrence() {
+async function updateBestOccurrence() {
     const bestOccurrenceContainer = document.getElementById('best-occurrence-list');
+    const currentTopFileContainer = document.getElementById('current-top-file');
     
     // Sort by total score
     const sortedFiles = Object.values(searchScores)
@@ -932,7 +962,68 @@ function updateBestOccurrence() {
                 <p>Lancez une recherche pour voir les fichiers les plus pertinents</p>
             </div>
         `;
+        currentTopFileContainer.innerHTML = `
+            <div class="empty-state-mini">
+                <p>Aucun résultat pour le moment</p>
+            </div>
+        `;
         return;
+    }
+    
+    // Display top file details in the middle card (only if not manually selected)
+    if (!window.manualFileSelection) {
+        const topFile = sortedFiles[0];
+        
+        // Fetch file content for preview
+        try {
+            const response = await fetch(`/api/file/${encodeURIComponent(topFile.path)}`);
+            const fileData = await response.json();
+            
+            if (!fileData.error) {
+                const contentPreview = fileData.content.substring(0, 300);
+                const sections = fileData.headers.slice(0, 3);
+                const bannerUrl = extractBannerImage(fileData.content);
+                const backgroundStyle = bannerUrl ? `style="background-image: url('${bannerUrl}'); background-size: cover; background-position: center;"` : '';
+                const bannerClass = bannerUrl ? 'has-banner' : '';
+                
+                currentTopFileContainer.innerHTML = `
+                    <div class="top-file-details full-height ${bannerClass}" ${backgroundStyle}>
+                        <div class="top-file-info">
+                            <div class="top-file-title">${topFile.title}</div>
+                            <div class="top-file-path">${topFile.path}</div>
+                            ${sections.length > 0 ? `
+                                <div class="top-file-sections">
+                                    <div class="top-file-sections-title">📑 Sections</div>
+                                    ${sections.map(h => `<div class="top-file-section">• ${h}</div>`).join('')}
+                                </div>
+                            ` : ''}
+                            <div class="top-file-tags">
+                                ${searchTags.map(tag => `<span class="top-file-tag">${tag}</span>`).join('')}
+                            </div>
+                            <div class="top-file-actions">
+                                <a class="top-file-btn primary" href="${fileData.github_url}" target="_blank">
+                                    🔗 Ouvrir sur GitHub
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            `;
+        }
+    } catch (error) {
+        console.error('Error fetching file details:', error);
+        // Fallback display without content
+        currentTopFileContainer.innerHTML = `
+            <div class="top-file-details">
+                <div class="top-file-info">
+                    <div class="top-file-title">${topFile.title}</div>
+                    <div class="top-file-path">${topFile.path}</div>
+                    <div class="top-file-tags">
+                        ${searchTags.map(tag => `<span class="top-file-tag">${tag}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+    }
     }
     
     // Display top files
@@ -942,7 +1033,7 @@ function updateBestOccurrence() {
         const isActive = window.currentHighlightedPath === file.path ? 'active' : '';
         
         return `
-            <div class="best-occurrence-item ${isActive}" onclick="selectSearchResult('${file.path}')">
+            <div class="best-occurrence-item ${isActive}" onclick="selectTopFile('${file.path}')">
                 <div class="best-occurrence-rank">${rankDisplay}</div>
                 <div class="best-occurrence-info">
                     <div class="best-occurrence-name">${file.title}</div>
@@ -958,16 +1049,73 @@ function updateBestOccurrence() {
         console.log('New top file detected:', currentTopPath);
         window.lastTopPath = currentTopPath;
         
-        // Auto-display the new top result
-        setTimeout(() => {
-            autoDisplayTopResult(currentTopPath);
-        }, 300);
-    } else if (sortedFiles.length > 0 && !window.currentHighlightedPath) {
+        // Only auto-display if user hasn't manually selected a file
+        if (!window.manualFileSelection) {
+            setTimeout(() => {
+                autoDisplayTopResult(currentTopPath);
+            }, 300);
+        }
+    } else if (sortedFiles.length > 0 && !window.currentHighlightedPath && !window.manualFileSelection) {
         // First time display
         setTimeout(() => {
             autoDisplayTopResult(currentTopPath);
         }, 300);
     }
+}
+
+// Select a file from top files list and update the display
+async function selectTopFile(path) {
+    console.log('Selected top file:', path);
+    
+    // Mark as manual selection to prevent auto-update
+    window.manualFileSelection = true;
+    
+    // Find the file in searchScores
+    const fileData = searchScores[path];
+    if (!fileData) return;
+    
+    const currentTopFileContainer = document.getElementById('current-top-file');
+    
+    // Fetch file content for preview
+    try {
+        const response = await fetch(`/api/file/${encodeURIComponent(path)}`);
+        const fullFileData = await response.json();
+        
+        if (!fullFileData.error) {
+            const sections = fullFileData.headers.slice(0, 3);
+            const bannerUrl = extractBannerImage(fullFileData.content);
+            const backgroundStyle = bannerUrl ? `style="background-image: url('${bannerUrl}'); background-size: cover; background-position: center;"` : '';
+            const bannerClass = bannerUrl ? 'has-banner' : '';
+            
+            currentTopFileContainer.innerHTML = `
+                <div class="top-file-details full-height ${bannerClass}" ${backgroundStyle}>
+                    <div class="top-file-info">
+                        <div class="top-file-title">${fileData.title}</div>
+                        <div class="top-file-path">${fileData.path}</div>
+                        ${sections.length > 0 ? `
+                            <div class="top-file-sections">
+                                <div class="top-file-sections-title">📑 Sections</div>
+                                ${sections.map(h => `<div class="top-file-section">• ${h}</div>`).join('')}
+                            </div>
+                        ` : ''}
+                        <div class="top-file-tags">
+                            ${searchTags.map(tag => `<span class="top-file-tag">${tag}</span>`).join('')}
+                        </div>
+                        <div class="top-file-actions">
+                            <a class="top-file-btn primary" href="${fullFileData.github_url}" target="_blank">
+                                🔗 Ouvrir sur GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+    } catch (error) {
+        console.error('Error fetching file details:', error);
+    }
+    
+    // Also navigate to it on the map
+    selectSearchResult(path);
 }
 
 // Auto-display top result without opening panel
@@ -1040,51 +1188,6 @@ function selectSearchResult(path) {
         // Update active state in best occurrence list
         updateBestOccurrence();
     }, 400);
-}
-
-// Open node details
-function openNode(path) {
-    fetch(`/api/file/${encodeURIComponent(path)}`)
-        .then(response => response.json())
-        .then(data => {
-            showDetail(data);
-        })
-        .catch(error => {
-            console.error('Error loading file:', error);
-        });
-}
-
-// Show detail panel
-function showDetail(data) {
-    const panel = document.getElementById('detail-panel');
-    const title = document.getElementById('detail-title');
-    const content = document.getElementById('detail-content');
-    
-    title.textContent = data.name || 'Details';
-    
-    let html = `
-        <div style="margin-bottom: 16px;">
-            <strong>Path:</strong> ${data.path || 'N/A'}
-        </div>
-    `;
-    
-    if (data.content) {
-        html += `
-            <div style="margin-bottom: 16px;">
-                <strong>Content:</strong>
-            </div>
-            <pre style="background: rgba(0,0,0,0.3); padding: 16px; border-radius: 8px; overflow-x: auto; max-height: 400px;">${data.content}</pre>
-        `;
-    }
-    
-    content.innerHTML = html;
-    panel.classList.remove('hidden');
-}
-
-// Close detail panel
-function closeDetail() {
-    document.getElementById('detail-panel').classList.add('hidden');
-    document.querySelectorAll('.node').forEach(n => n.classList.remove('active'));
 }
 
 // Premium Search Bar - Custom Caret & Animated Suggestions

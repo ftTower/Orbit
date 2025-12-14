@@ -1,0 +1,1479 @@
+{
+  "files": [
+    {
+      "name": "readme.md",
+      "path": "readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/readme.md",
+      "title": "readme",
+      "headers": [
+        "🔐 About This Portfolio",
+        "`📫 Contact`",
+        "`📁 Portfolio Structure`"
+      ],
+      "keywords": [
+        "📁 Portfolio Structure",
+        "📫 Contact"
+      ],
+      "content": "![font](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/font.png)\n\n![banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/banner.jpg)\n\n\n<div align=\"center\">\n\n## 🔐 About This Portfolio\n\nThis repository centralizes detailed study notes, write-ups, and pentesting utilities. Designed for continuous learning and [search engine](https://github.com/ftTower/Orbit) integration.\n\n</div>\n\n---\n\n>💌 **Notes**: Currently migrating my work from Notion to GitHub, ",
+      "size": 2293,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/readme.md"
+    },
+    {
+      "name": "HTB Academy Student Transcript.pdf",
+      "path": "Certifications/HTB Academy Student Transcript.pdf",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Certifications/HTB Academy Student Transcript.pdf",
+      "title": "HTB Academy Student Transcript",
+      "headers": [],
+      "keywords": [],
+      "content": "%PDF-1.4\n%\n1 0 obj\n<</Title (HTB Academy Student Transcript)\n/Creator (Mozilla/5.0 \\(X11; Linux x86_64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) HeadlessChrome/143.0.0.0 Safari/537.36)\n/Producer (Skia/PDF m143)\n/CreationDate (D:20251212211921+00'00')\n/ModDate (D:20251212211921+00'00')>>\nendobj\n3 0 obj\n<</ca 1\n/BM /Normal>>\nendobj\n9 0 obj\n<</N 3\n/Filter /FlateDecode\n/Length 296>> stream\nx}J`\u0014\u001fkA\u0014A\u000e\u000e\u0019\u001c\\hX\\[V4M؟\u0005&.ހe(\b\u000e%o\u001a$\u0005{x/@$*\u001aNs˥Q\u001d\u0018SLeZ}K}^'7\u001bv!y.'\u001bV>\u0003s<^(\u0013F>7V=fWtV%J-جS#LQ\"'IB ENPyzfISP\u0017YH",
+      "size": 1017147,
+      "type": ".pdf",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Certifications/HTB Academy Student Transcript.pdf"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/readme.md",
+      "title": "readme",
+      "headers": [],
+      "keywords": [],
+      "content": "![font](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/font.png)\n![banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/banner.png)\n",
+      "size": 198,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/readme.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/readme.md",
+      "title": "PROTOCOLS",
+      "headers": [
+        "PROTOCOLS",
+        "📑 Table of Contents",
+        "Protocol Details",
+        "1. SSH - Secure Shell",
+        "2. SMB - Server Message Block",
+        "3. MSSQL - Microsoft SQL",
+        "4. NFS - Network File System",
+        "5. IMAP - Internet Message Access Protocol",
+        "6. POP3 - Post Office Protocol 3",
+        "7. SNMP - Simple Network Management Protocol",
+        "8. Rsync",
+        "9. R-Services",
+        "10. RDP - Remote Desktop Protocol",
+        "11. WinRM - Windows Remote Management",
+        "12. WMI - Windows Management Instrumentation"
+      ],
+      "keywords": [],
+      "content": "# PROTOCOLS\n\n![banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/banner.png)\n\n## 📑 Table of Contents\n\n1. [SSH](#1-ssh---secure-shell) - Secure Shell\n2. [SMB](#2-smb---server-message-block) - Server Message Block\n3. [MSSQL](#3-mssql---microsoft-sql) - Microsoft SQL\n4. [NFS](#4-nfs---network-file-system) - Network File System\n5. [IMAP](#5-imap---internet-message-access-protocol) - Internet Message Access Protocol\n6. [POP3](#6-pop3---post-office-protoc",
+      "size": 2497,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/readme.md"
+    },
+    {
+      "name": "configuration.md",
+      "path": "Courses/Protocols/IMAP/configuration.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/IMAP/configuration.md",
+      "title": "IMAP Configuration and Setup",
+      "headers": [
+        "IMAP Configuration and Setup",
+        "📃 Default Configuration",
+        "❌ Dangerous Settings"
+      ],
+      "keywords": [],
+      "content": "# IMAP Configuration and Setup\n\n\n---\n\n## 📃 Default Configuration\n\n>Both IMAP and POP3 have a large number of configuration options, making it difficult to deep dive into each component in more detail. If you wish to examine these protocol configurations deeper, we recommend creating a VM locally and install the two packages dovecot-imapd, and dovecot-pop3d using apt and play around with the configurations and experiment.\n[core settings](https://doc.dovecot.org/2.4.1/core/summaries/settings.html)",
+      "size": 1145,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/IMAP/configuration.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/IMAP/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/IMAP/footprinting.md",
+      "title": "IMAP Footprinting",
+      "headers": [
+        "IMAP Footprinting",
+        "Methods",
+        "Nmap IMAP",
+        "Curl it",
+        "OpenSSL - TLS Encrypted Interaction IMAP"
+      ],
+      "keywords": [],
+      "content": "# IMAP Footprinting\n\n## Methods\n\n### Nmap IMAP\n\n```bash\nsudo nmap <ip_address> -sV -p110,143,993,995 -sC\n```\n```\nStarting Nmap 7.80 ( https://nmap.org ) at  CEST\nNmap scan report for \nHost is up (0.00026s latency).\n\nPORT    STATE SERVICE  VERSION\n110/tcp open  pop3     Dovecot pop3d\n|_pop3-capabilities: AUTH-RESP-CODE SASL STLS TOP UIDL RESP-CODES CAPA PIPELINING\n| ssl-cert: Subject: commonName=mail1.inlanefreight.htb/organizationName=Inlanefreight/stateOrProvinceName=California/countryName=US\n|",
+      "size": 6821,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/IMAP/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/IMAP/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/IMAP/readme.md",
+      "title": "IMAP",
+      "headers": [
+        "IMAP",
+        "📋 Protocol Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [
+        "1 CLOSE",
+        "1 LIST \"\" *",
+        "1 UNSELECT INBOX",
+        "1 LOGOUT",
+        "1 CREATE \"INBOX\"",
+        "1 LOGIN username password",
+        "1 RENAME \"ToRead\" \"Important\"",
+        "1 LSUB \"\" *",
+        "1 FETCH <ID> all",
+        "1 DELETE \"INBOX\"",
+        "1 SELECT INBOX"
+      ],
+      "content": "# IMAP \n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/IMAP/banner.png)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Application Protocol |\n| **Port** | 143 (IMAP), 993 (IMAPS) |\n| **OS** | Cross-platform |\n| **Purpose** | Email retrieval and management |\n| **Sub-Protocols** | IMAP4, IMAP4rev1, IMAPS (IMAP over SSL/TLS) |\n| **Status** | Active |\n| **OSI Layer** | Layer 7 (Application) |\n| **RFC** ",
+      "size": 1517,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/IMAP/readme.md"
+    },
+    {
+      "name": "configuration.md",
+      "path": "Courses/Protocols/MSSQL/configuration.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/MSSQL/configuration.md",
+      "title": "MSSQL CONFIGURATION",
+      "headers": [
+        "MSSQL CONFIGURATION",
+        "❌ Dangerous Settings"
+      ],
+      "keywords": [],
+      "content": "# MSSQL CONFIGURATION\n\n## ❌ Dangerous Settings\n\n- MSSQL clients not using encryption to connect to the MSSQL server\n\n- The use of self-signed certificates when encryption is being used. It is possible to spoof self-signed certificates\n\n- The use of [named pipes](https://learn.microsoft.com/en-us/sql/tools/configuration-manager/named-pipes-properties?view=sql-server-ver15)\n\n- Weak & default sa credentials. Admins may forget to disable this account",
+      "size": 452,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/MSSQL/configuration.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/MSSQL/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/MSSQL/footprinting.md",
+      "title": "MSSQL Footprinting",
+      "headers": [
+        "MSSQL Footprinting",
+        "Methods",
+        "Connecting with `Mssql client`",
+        "Script scanning with `Nmap`",
+        "Ping in `Metasploit`"
+      ],
+      "keywords": [
+        "Metasploit",
+        "Mssql client",
+        "Nmap"
+      ],
+      "content": "# MSSQL Footprinting\n\n## Methods\n\n### Connecting with `Mssql client`\n\nif you already have the credentials, you can connect with Mssql client.\n\n```bash\npython3 mssqlclient.py <username>@<ip_address> -windows-auth\n```\n\n```\nImpacket v0.9.22 - Copyright 2020 SecureAuth Corporation\n\nPassword:\n[*] Encryption required, switching to TLS\n[*] ENVCHANGE(DATABASE): Old Value: master, New Value: master\n[*] ENVCHANGE(LANGUAGE): Old Value: , New Value: us_english\n[*] ENVCHANGE(PACKETSIZE): Old Value: 4096, New",
+      "size": 3700,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/MSSQL/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/MSSQL/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/MSSQL/readme.md",
+      "title": "MSSQL (Microsoft SQL)",
+      "headers": [
+        "MSSQL (Microsoft SQL)",
+        "📑 Table of Contents",
+        "📋 Protocol Information",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# MSSQL (Microsoft SQL)\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/MSSQL/banner.png)\n\n---\n\n## 📑 Table of Contents\n\n- [Protocol Information](#-protocol-information)\n- [Cross-References](#-cross-references)\n- [External-Ressources](#-external-ressources)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Relational Database Management System (RDBMS) |\n| **Port** | 1433 (TCP), 1434 (UDP) |\n| **OS** | Wi",
+      "size": 1050,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/MSSQL/readme.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/NFS/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/NFS/footprinting.md",
+      "title": "NFS Footprinting",
+      "headers": [
+        "NFS Footprinting",
+        "Methods",
+        "Scanning for NFS",
+        "Show Available NFS Shares",
+        "Mounting NFS Share",
+        "List Contents with Usernames & Group Names",
+        "List Contents with UIDs & GUIDs"
+      ],
+      "keywords": [],
+      "content": "# NFS Footprinting\n\n## Methods\n\n### Scanning for NFS\n\n```bash\nsudo nmap --script nfs* <ip address> -sV -p111,2049\n```\n\n```\nStarting Nmap 7.80 ( https://nmap.org ) at 2021-09-19 17:37 CEST\nNmap scan report for 10.129.14.128\nHost is up (0.00021s latency).\n\nPORT     STATE SERVICE VERSION\n111/tcp  open  rpcbind 2-4 (RPC #100000)\n| nfs-ls: Volume /mnt/nfs\n|   access: Read Lookup NoModify NoExtend NoDelete NoExecute\n| PERMISSION  UID    GID    SIZE  TIME                 FILENAME\n| rwxrwxrwx   65534  6",
+      "size": 3183,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/NFS/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/NFS/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/NFS/readme.md",
+      "title": "NFS (Network File System)",
+      "headers": [
+        "NFS (Network File System)",
+        "📑 Table of Contents",
+        "📋 Protocol Information",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# NFS (Network File System)\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/NFS/banner.png)\n\n---\n\n## 📑 Table of Contents\n\n- [Protocol Information](#-protocol-information)\n- [Cross-References](#-cross-references)\n- [External-Ressources](#-external-ressources)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Distributed File System Protocol |\n| **Port** | 2049 (TCP/UDP) |\n| **OS** | Unix/Linux (primarily",
+      "size": 937,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/NFS/readme.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/POP3/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/POP3/footprinting.md",
+      "title": "POP3 Footprinting",
+      "headers": [
+        "POP3 Footprinting",
+        "Methods",
+        "OpenSSL - TLS Encrypted Interaction POP3",
+        "[IMAP Footprinting](../IMAP/footprinting.md)"
+      ],
+      "keywords": [],
+      "content": "# POP3 Footprinting\n\n\n## Methods\n\n### OpenSSL - TLS Encrypted Interaction POP3\n\n```bash\nopenssl s_client -connect 10.129.14.128:pop3s\n```\n\n```\nCONNECTED(00000003)\nCan't use SSL_get_servername\ndepth=0 C = US, ST = California, L = Sacramento, O = Inlanefreight, OU = Customer Support, CN = mail1.inlanefreight.htb, emailAddress = cry0l1t3@inlanefreight.htb\nverify error:num=18:self signed certificate\nverify return:1\ndepth=0 C = US, ST = California, L = Sacramento, O = Inlanefreight, OU = Customer Sup",
+      "size": 2493,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/POP3/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/POP3/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/POP3/readme.md",
+      "title": "POP3",
+      "headers": [
+        "POP3",
+        "📋 Protocol Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# POP3\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/POP3/banner.png)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Mail Protocol |\n| **Port** | 110 (POP3), 995 (POP3S) |\n| **OS** | Cross-platform |\n| **Purpose** | Email retrieval from mail server |\n| **Sub-Protocols** | POP3S (POP3 over SSL/TLS) |\n| **Status** | Active |\n| **OSI Layer** | Application Layer (Layer 7) |\n| **RFC** | [RFC 1939](https",
+      "size": 664,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/POP3/readme.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/R-Services/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/R-Services/footprinting.md",
+      "title": "R-Services Footprinting",
+      "headers": [
+        "R-Services Footprinting",
+        "Methods",
+        "Scanning for R-Services",
+        "Sample .rhosts File",
+        "Logging in Using Rlogin",
+        "Listing Authenticated Users Using Rwho",
+        "Listing Authenticated Users Using Rusers"
+      ],
+      "keywords": [],
+      "content": "# R-Services Footprinting\n\n## Methods\n\n### Scanning for R-Services\n\n```bash\nsudo nmap -sV -p 512,513,514 <ip_address>\n```\n```bash\nStarting Nmap 7.80 ( https://nmap.org ) at 2022-12-02 15:02 EST\nNmap scan report for 10.0.17.2\nHost is up (0.11s latency).\n\nPORT    STATE SERVICE    VERSION\n512/tcp open  exec?\n513/tcp open  login?\n514/tcp open  tcpwrapped\n\nService detection performed. Please report any incorrect results at https://nmap.org/submit/ .\nNmap done: 1 IP address (1 host up) scanned in 145.",
+      "size": 1850,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/R-Services/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/R-Services/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/R-Services/readme.md",
+      "title": "R-Services",
+      "headers": [
+        "R-Services",
+        "📑 Table of Contents",
+        "📋 Protocol Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# R-Services\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/R-Services/banner.png)\n\n---\n\n## 📑 Table of Contents\n\n- [Protocol Information](#-protocol-information)\n- [Usage](#-usage)\n- [Cross-References](#-cross-references)\n- [External-Ressources](#-external-ressources)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Remote Execution Protocol Suite |\n| **Port** | TCP 512 (rexec), TCP 513 (rlogin), TCP ",
+      "size": 2485,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/R-Services/readme.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/RDP/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/RDP/footprinting.md",
+      "title": "RDP Footprinting",
+      "headers": [
+        "RDP Footprinting",
+        "Methods",
+        "Scanning with Nmap",
+        "[RDP Security Check](https://github.com/CiscoCXSecurity/rdp-sec-check) - Installation",
+        "RDP Security Check"
+      ],
+      "keywords": [
+        "--disable-arp-ping",
+        "-n",
+        "--packet-trace"
+      ],
+      "content": "# RDP Footprinting\n\n## Methods\n\n### Scanning with Nmap\n\n```bash\nnmap -sV -sC <ip_address> -p3389 --script rdp*\n```\n```bash\n\nStarting Nmap 7.92 ( https://nmap.org ) at 2021-11-06 15:45 CET\nNmap scan report for 10.129.201.248\nHost is up (0.036s latency).\n\nPORT     STATE SERVICE       VERSION\n3389/tcp open  ms-wbt-server Microsoft Terminal Services\n| rdp-enum-encryption: \n|   Security layer\n|     CredSSP (NLA): SUCCESS\n|     CredSSP with Early User Auth: SUCCESS\n|_    RDSTLS: SUCCESS\n| rdp-ntlm-inf",
+      "size": 7653,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/RDP/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/RDP/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/RDP/readme.md",
+      "title": "RDP (Remote Desktop Protocol)",
+      "headers": [
+        "RDP (Remote Desktop Protocol)",
+        "📑 Table of Contents",
+        "📋 Protocol Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# RDP (Remote Desktop Protocol)\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/RDP/banner.png)\n\n---\n\n## 📑 Table of Contents\n\n- [Protocol Information](#-protocol-information)\n- [Usage](#-usage)\n- [Cross-References](#-cross-references)\n- [External-Ressources](#-external-ressources)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Application Protocol |\n| **Port** | 3389 (TCP/UDP) |\n| **OS** | Windows (p",
+      "size": 1299,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/RDP/readme.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/Rsync/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/Rsync/footprinting.md",
+      "title": "Rsync Footprinting",
+      "headers": [
+        "Rsync Footprinting",
+        "Methods",
+        "Scanning for Rsync",
+        "Probing for Accessible Shares",
+        "list",
+        "Enumerating an Open Share"
+      ],
+      "keywords": [],
+      "content": "# Rsync Footprinting\n\n\n## Methods\n\n### Scanning for Rsync\n\n```bash\nsudo nmap -sV -p 873 <ip_address>\n```\n```bash\nStarting Nmap 7.92 ( https://nmap.org ) at 2022-09-19 09:31 EDT\nNmap scan report for localhost (127.0.0.1)\nHost is up (0.0058s latency).\n\nPORT    STATE SERVICE VERSION\n873/tcp open  rsync   (protocol version 31)\n\nService detection performed. Please report any incorrect results at https://nmap.org/submit/ .\nNmap done: 1 IP address (1 host up) scanned in 1.13 seconds\n```\n<p>In this case",
+      "size": 1440,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/Rsync/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/Rsync/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/Rsync/readme.md",
+      "title": "Rsync",
+      "headers": [
+        "Rsync",
+        "📑 Table of Contents",
+        "📋 Protocol Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# Rsync\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/Rsync/banner.png)\n\n---\n\n## 📑 Table of Contents\n\n- [Protocol Information](#-protocol-information)\n- [Usage](#-usage)\n- [Cross-References](#-cross-references)\n- [External-Ressources](#-external-ressources)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | File Synchronization Protocol |\n| **Port** | TCP 873 (rsync daemon), TCP 22 (over SSH) |\n| **OS*",
+      "size": 1308,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/Rsync/readme.md"
+    },
+    {
+      "name": "backup.sh",
+      "path": "Courses/Protocols/Rsync/scripts/backup.sh",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/Rsync/scripts/backup.sh",
+      "title": "backup",
+      "headers": [],
+      "keywords": [],
+      "content": "#!/bin/bash\n\n# Configuration de la cible (à adapter)\nREMOTE_HOST=\"adresse.ip.de.l.appareil\"\nREMOTE_USER=\"utilisateur_ssh\"\nSOURCE_DIR=\"/volume1/dossier_a_sauvegarder/\"\nDEST_DIR=\"/chemin/distant/de/destination/\"\nLOG_FILE=\"/var/log/rsync_sync.log\"\n\n# --- Boucle de vérification de l'hôte ---\necho \"$(date): Tentative de connexion à $REMOTE_HOST...\" >> $LOG_FILE\n\nwhile ! ping -c 1 -W 1 $REMOTE_HOST > /dev/null 2>&1\ndo\n    echo \"$(date): Hôte ($REMOTE_HOST) hors ligne. Attente de 5 minutes...\" >> $LOG_",
+      "size": 1082,
+      "type": ".sh",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/Rsync/scripts/backup.sh"
+    },
+    {
+      "name": "configuration.md",
+      "path": "Courses/Protocols/SMB/configuration.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/SMB/configuration.md",
+      "title": "CONFIGURE AND SETUP SMB",
+      "headers": [
+        "CONFIGURE AND SETUP SMB",
+        "📃 Default Configuration",
+        "❌ Dangerous Settings"
+      ],
+      "keywords": [
+        "read only = no",
+        "logon script = script.sh",
+        "directory mask = 0777",
+        "guest ok = yes",
+        "workgroup = WORKGROUP/DOMAIN",
+        "magic script = script.sh",
+        "enable privileges = yes",
+        "map to guest = bad user",
+        "magic output = script.out",
+        "create mask = 0700",
+        "writable = yes",
+        "unix password sync = yes",
+        "browseable = yes",
+        "read only = yes",
+        "[sharename]",
+        "create mask = 0777",
+        "usershare allow guests = yes",
+        "server string = STRING",
+        "path = /path/here/"
+      ],
+      "content": "# CONFIGURE AND SETUP SMB\n\n## 📃 Default Configuration\n\n```bash\ncat /etc/samba/smb.conf | grep -v \"#\\|\\;\"\n```\n\nExample output:\n```bash\n[global]\n    workgroup = DEV.INFREIGHT.HTB\n    server string = DEVSMB\n    log file = /var/log/samba/log.%m\n    max log size = 1000\n    logging = file\n    panic action = /usr/share/samba/panic-action %d\n\n    server role = standalone server\n    obey pam restrictions = yes\n    unix password sync = yes\n\n    passwd program = /usr/bin/passwd %u\n    passwd chat = *Enter\\",
+      "size": 2692,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/SMB/configuration.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/SMB/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/SMB/footprinting.md",
+      "title": "SMB FOOTPRINTING",
+      "headers": [
+        "SMB FOOTPRINTING",
+        "Table of Contents",
+        "Methods",
+        "Scanning with Nmap",
+        "RPC Client",
+        "RPCclient - Enumeration",
+        "Rpcclient - User Enumeration",
+        "Rpcclient - Group Information",
+        "Brute Forcing User RIDs",
+        "[Samrdump.py](https://github.com/SecureAuthCorp/impacket/blob/master/examples/samrdump.py)",
+        "[SMBmap](https://github.com/ShawnDEvans/smbmap)",
+        "[CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec)",
+        "[Enum4Linux-ng](https://github.com/cddmp/enum4linux-ng)"
+      ],
+      "keywords": [
+        "enumdomusers",
+        "querydominfo",
+        "queryuser <RID>",
+        "enumdomains",
+        "querygroup <RID>",
+        "netsharegetinfo <share>",
+        "netshareenumall",
+        "srvinfo"
+      ],
+      "content": "# SMB FOOTPRINTING\n\n## Table of Contents\n\n- [Methods](#methods)\n    - [Scanning with Nmap](#scanning-with-nmap)\n    - [RPC Client](#rpc-client)\n        - [RPCclient - Enumeration](#rpcclient---enumeration)\n        - [Rpcclient - User Enumeration](#rpcclient---user-enumeration)\n        - [Rpcclient - Group Information](#rpcclient---group-information)\n        - [Brute Forcing User RIDs](#brute-forcing-user-rids)\n    - [Samrdump.py](#samrdumppy)\n    - [SMBmap](#smbmap)\n    - [CrackMapExec](#crackma",
+      "size": 15644,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/SMB/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/SMB/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/SMB/readme.md",
+      "title": "SMB (Server Message Block)",
+      "headers": [
+        "SMB (Server Message Block)",
+        "📑 Table of Contents",
+        "📋 Protocol Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# SMB (Server Message Block)\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/SMB/banner.png)\n\n---\n\n## 📑 Table of Contents\n\n- [Protocol Information](#-protocol-information)\n- [Usage](#-usage)\n- [Cross-References](#-cross-references)\n- [External-Ressources](#-external-ressources)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Application Protocol |\n| **Port** | 445 (TCP), 139 (TCP over NetBIOS) |\n| **O",
+      "size": 1136,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/SMB/readme.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/SNMP/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/SNMP/footprinting.md",
+      "title": "SNMP Footprinting",
+      "headers": [
+        "SNMP Footprinting",
+        "Methods",
+        "Snpwalk",
+        "Onesixtyone",
+        "Braa"
+      ],
+      "keywords": [],
+      "content": "# SNMP Footprinting\n\n## Methods\n\n### Snpwalk\n\nSnmpwalk is used to query the OIDs with their information.\n\n```bash\nsnmpwalk -v2c -c public <ip_address>\n```\n\n```\niso.3.6.1.2.1.1.1.0 = STRING: \"Linux htb 5.11.0-34-generic #36~20.04.1-Ubuntu SMP Fri Aug 27 08:06:32 UTC 2021 x86_64\"\niso.3.6.1.2.1.1.2.0 = OID: iso.3.6.1.4.1.8072.3.2.10\niso.3.6.1.2.1.1.3.0 = Timeticks: (5134) 0:00:51.34\niso.3.6.1.2.1.1.4.0 = STRING: \"mrb3n@inlanefreight.htb\"\niso.3.6.1.2.1.1.5.0 = STRING: \"htb\"\niso.3.6.1.2.1.1.6.0 = STR",
+      "size": 4534,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/SNMP/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/SNMP/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/SNMP/readme.md",
+      "title": "Simple Network Management Protocol (SNMP)",
+      "headers": [
+        "Simple Network Management Protocol (SNMP)",
+        "📋 Protocol Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# Simple Network Management Protocol (SNMP)\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/SNMP/banner.png)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Application Protocol |\n| **Port** | UDP 161 (Agent), UDP 162 (Manager/Trap) |\n| **OS** | Cross-platform |\n| **Purpose** | Network monitoring and management |\n| **Sub-Protocols** | SNMPv1, SNMPv2c, SNMPv3 |\n| **Status** | Active |\n| **OSI Layer** |",
+      "size": 767,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/SNMP/readme.md"
+    },
+    {
+      "name": "configuration.md",
+      "path": "Courses/Protocols/SSH/configuration.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/SSH/configuration.md",
+      "title": "SSH Configuration and Setup",
+      "headers": [
+        "SSH Configuration and Setup",
+        "📃 Default Configuration",
+        "❌ Dangerous Settings"
+      ],
+      "keywords": [],
+      "content": "# SSH Configuration and Setup\n\n\n---\n\n## 📃 Default Configuration\nYou can get the ssh default configuration with this command :\n```bash\ncat /etc/ssh/sshd_config  | grep -v \"#\" | sed -r '/^\\s*$/d'\n```\nOutput :\n```\nInclude /etc/ssh/sshd_config.d/*.conf\nChallengeResponseAuthentication no\nUsePAM yes\nX11Forwarding yes # <- THIS IS A UNSECURE PARAMETER\nPrintMotd no\nAcceptEnv LANG LC_*\nSubsystem       sftp    /usr/lib/openssh/sftp-server\n```\n\n## ❌ Dangerous Settings\n\n| Setting | Parameter |Description | ",
+      "size": 1084,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/SSH/configuration.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/SSH/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/SSH/footprinting.md",
+      "title": "SSH Footprinting",
+      "headers": [
+        "SSH Footprinting",
+        "Methods",
+        "SSH-Audit",
+        "general",
+        "key exchange algorithms",
+        "host-key algorithms",
+        "Change Authentication Method"
+      ],
+      "keywords": [],
+      "content": "# SSH Footprinting\n\n\n## Methods\n\n### SSH-Audit\n\nFirst of all, clone ssh-audit tool and enter repository\n```bash\ngit clone https://github.com/jtesta/ssh-audit.git && cd ssh-audit\n```\n\nLaunch the tool with ip address in parameter\n```bash\n./ssh-audit.py <ip adress>\n```\n\nOutput :\n```\n# general\n(gen) banner: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.3\n(gen) software: OpenSSH 8.2p1\n(gen) compatibility: OpenSSH 7.4+, Dropbear SSH 2018.76+\n(gen) compression: enabled (zlib@openssh.com)                       ",
+      "size": 3196,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/SSH/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/SSH/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/SSH/readme.md",
+      "title": "SSH (Secure Shell)",
+      "headers": [
+        "SSH (Secure Shell)",
+        "📑 Table of Contents",
+        "📋 Protocol Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# SSH (Secure Shell)\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/SSH/banner.jpg)\n\n---\n\n## 📑 Table of Contents\n\n- [Protocol Information](#-protocol-information)\n- [Usage](#-usage)\n- [Cross-References](#-cross-references)\n- [External-Ressources](#-external-ressources)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Network Protocol |\n| **Port** | TCP 22 |\n| **OS** | UNIX, Linux (Native), Windows |\n|",
+      "size": 1211,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/SSH/readme.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/WMI/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/WMI/footprinting.md",
+      "title": "WMI Footprinting",
+      "headers": [
+        "WMI Footprinting",
+        "Methods",
+        "[WMIexec.py](https://github.com/SecureAuthCorp/impacket/blob/master/examples/wmiexec.py)"
+      ],
+      "keywords": [],
+      "content": "# WMI Footprinting\n\n## Methods\n\n### [WMIexec.py](https://github.com/SecureAuthCorp/impacket/blob/master/examples/wmiexec.py)\n\n```powershell\n/usr/share/doc/python3-impacket/examples/wmiexec.py <username>:\"<password>\"@<ip_address> \"hostname\"\n```\noutput :\n```\nImpacket v0.9.22 - Copyright 2020 SecureAuth Corporation\n\n[*] SMBv3.0 dialect used\nILF-SQL-01\n```",
+      "size": 354,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/WMI/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/WMI/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/WMI/readme.md",
+      "title": "WMI (Windows Management Instrumentationc)",
+      "headers": [
+        "WMI (Windows Management Instrumentationc)",
+        "📑 Table of Contents",
+        "📋 Protocol Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# WMI (Windows Management Instrumentationc)\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/WMI/banner.png)\n\n---\n\n## 📑 Table of Contents\n\n- [Protocol Information](#-protocol-information)\n- [Usage](#-usage)\n- [Cross-References](#-cross-references)\n- [External-Ressources](#-external-ressources)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Management Protocol |\n| **Port** | 135 (RPC), Dynamic ports (D",
+      "size": 840,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/WMI/readme.md"
+    },
+    {
+      "name": "footprinting.md",
+      "path": "Courses/Protocols/WinRM/footprinting.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/WinRM/footprinting.md",
+      "title": "WINRM Footprinting",
+      "headers": [
+        "WINRM Footprinting",
+        "Methods",
+        "Scanning with Nmap",
+        "[Evil-WinRM](https://github.com/Hackplayers/evil-winrm)"
+      ],
+      "keywords": [
+        "--disable-arp-ping",
+        "-n"
+      ],
+      "content": "# WINRM Footprinting\n\n## Methods\n\n### Scanning with Nmap\n\n>WinRM uses TCP ports 5985 (HTTP) and 5986 (HTTPS) by default, which we can scan using Nmap. However, often we will see that only HTTP (TCP 5985) is used instead of HTTPS (TCP 5986).\n```bash\nnmap -sV -sC <ip_address> -p5985,5986 --disable-arp-ping -n\n```\n\n| Parameter | Description |\n|-----------|-------------|\n| `--disable-arp-ping` | Forces nmap to use other protocols (TCP/UDP) instead of ARP for host discovery |\n| `-n` | No DNS resoluti",
+      "size": 1936,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/WinRM/footprinting.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Protocols/WinRM/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Protocols/WinRM/readme.md",
+      "title": "WinRM (Windows Remote Management)",
+      "headers": [
+        "WinRM (Windows Remote Management)",
+        "📑 Table of Contents",
+        "📋 Protocol Information",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# WinRM (Windows Remote Management)\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Protocols/WinRM/banner.png)\n\n---\n\n## 📑 Table of Contents\n\n- [Protocol Information](#-protocol-information)\n- [Cross-References](#-cross-references)\n- [External-Ressources](#-external-ressources)\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Remote Management Protocol |\n| **Port** | 5985 (HTTP), 5986 (HTTPS) |\n| **OS** | Window",
+      "size": 1133,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Protocols/WinRM/readme.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Tools/Metasploit/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Tools/Metasploit/readme.md",
+      "title": "Metasploit",
+      "headers": [
+        "Metasploit"
+      ],
+      "keywords": [],
+      "content": "# Metasploit",
+      "size": 12,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Tools/Metasploit/readme.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Tools/Nmap/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Tools/Nmap/readme.md",
+      "title": "Nmap",
+      "headers": [
+        "Nmap",
+        "📑 Table of Contents",
+        "📋 Tool Information",
+        "🔨 Usage",
+        "Basic host discovery",
+        "Scan specific ports",
+        "Scan port range",
+        "Service version detection",
+        "OS detection",
+        "Aggressive scan",
+        "Stealth SYN scan",
+        "UDP scan",
+        "Save output to file",
+        "Scan with NSE scripts",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# Nmap\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Tools/Nmap/banner.png)\n\n---\n\n## 📑 Table of Contents\n\n- [Tool Information](#-tool-information)\n- [Usage](#-usage)\n- [Cross-References](#-cross-references)\n- [External-Ressources](#-external-ressources)\n\n---\n\n## 📋 Tool Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Network Scanner |\n| **Category** | Reconnaissance / Network Discovery |\n| **Platform** | Linux, Windows, macOS |\n|",
+      "size": 1246,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Tools/Nmap/readme.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Web/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Web/readme.md",
+      "title": "Web",
+      "headers": [
+        "Web"
+      ],
+      "keywords": [],
+      "content": "# Web",
+      "size": 5,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Web/readme.md"
+    },
+    {
+      "name": "enumeration.md",
+      "path": "Courses/Web/Wordpress/enumeration.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Web/Wordpress/enumeration.md",
+      "title": "WordPress enumeration",
+      "headers": [
+        "WordPress enumeration"
+      ],
+      "keywords": [],
+      "content": "# WordPress enumeration\n\n",
+      "size": 25,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Web/Wordpress/enumeration.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Courses/Web/Wordpress/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Web/Wordpress/readme.md",
+      "title": "Wordpress",
+      "headers": [
+        "Wordpress",
+        "📋 Tool Information",
+        "📃 Tool Description",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# Wordpress\n\n![Banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Courses/Web/Wordpress/banner.png)\n\n\nWordPress is the most popular open source Content Management System (CMS), powering nearly one-third of all websites in the world. It can be used for multiple purposes, such as hosting blogs, forums, e-commerce, project management, document management, and much more\n\n---\n\n## 📋 Tool Information\n\n| Property | Details |\n|----------|---------|\n| **Type** | Content Managem",
+      "size": 1033,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Web/Wordpress/readme.md"
+    },
+    {
+      "name": "structure.md",
+      "path": "Courses/Web/Wordpress/structure.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Web/Wordpress/structure.md",
+      "title": "Wordpress structure",
+      "headers": [
+        "Wordpress structure",
+        "Default WordPress File Structure",
+        "Default WordPress Structure (UBUNTU Linux Web server)",
+        "File Structure",
+        "wp-config.php",
+        "Key WordPress Directories",
+        "WP-Content",
+        "WP-Includes"
+      ],
+      "keywords": [
+        "/var/www/html"
+      ],
+      "content": "# Wordpress structure\n\n## Default WordPress File Structure\n\n>WordPress can be installed on a Windows, Linux, or Mac OSX host.\n\n### Default WordPress Structure (UBUNTU Linux Web server)\n\n**WordPress requires a fully installed and configured LAMP stack (Linux operating system, Apache HTTP Server, MySQL database, and the PHP programming language) before installation on a Linux host**\n\nall WordPress supporting files and directories will be accessible in the webroot located at **`/var/www/html`**.\n\n#",
+      "size": 4435,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Web/Wordpress/structure.md"
+    },
+    {
+      "name": "users_roles.md",
+      "path": "Courses/Web/Wordpress/users_roles.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Courses/Web/Wordpress/users_roles.md",
+      "title": "Wordpress users rules",
+      "headers": [
+        "Wordpress users rules"
+      ],
+      "keywords": [],
+      "content": "# Wordpress users rules\n\n>There are five types of users in a standard WordPress installation.\n\n| Role | Description |\n|------|-------------|\n| Administrator | This user has access to administrative features within the website. This includes adding and deleting users and posts, as well as editing source code. |\n| Editor | An editor can publish and manage posts, including the posts of other users. |\n| Author | Authors can publish and manage their own posts. |\n| Contributor | These users can write ",
+      "size": 836,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Courses/Web/Wordpress/users_roles.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Labs/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Labs/readme.md",
+      "title": "readme",
+      "headers": [],
+      "keywords": [],
+      "content": "![font](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Labs/font.png)\n![banner](https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Labs/banner.png)",
+      "size": 191,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Labs/readme.md"
+    },
+    {
+      "name": "part-1.md",
+      "path": "Labs/HTB_A_FOOTPRINTING_LAB/part-1.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Labs/HTB_A_FOOTPRINTING_LAB/part-1.md",
+      "title": "part-1",
+      "headers": [
+        "First part",
+        "Table of Contents",
+        "Objective",
+        "`subject :`",
+        "`resolution :`",
+        "Initial Reconnaissance",
+        "Nmap Scan",
+        "Port Analysis",
+        "Service Enumeration",
+        "SSH Enumeration",
+        "FTP Enumeration",
+        "Exploitation",
+        "FTP Access",
+        "SSH Key Extraction",
+        "SSH Connection",
+        "Flag Capture"
+      ],
+      "keywords": [
+        "-i",
+        ".ssh",
+        "get",
+        ".bash_history",
+        "/home",
+        "subject :",
+        "resolution :"
+      ],
+      "content": "## First part\n\n### Table of Contents\n1. [Objective](#objective)\n2. [Initial Reconnaissance](#initial-reconnaissance)\n  - [Nmap Scan](#nmap-scan)\n  - [Port Analysis](#port-analysis)\n3. [Service Enumeration](#service-enumeration)\n  - [SSH Enumeration](#ssh-enumeration)\n  - [FTP Enumeration](#ftp-enumeration)\n4. [Exploitation](#exploitation)\n  - [FTP Access](#ftp-access)\n  - [SSH Key Extraction](#ssh-key-extraction)\n  - [SSH Connection](#ssh-connection)\n5. [Flag Capture](#flag-capture)\n\n---\n\n### Ob",
+      "size": 11553,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Labs/HTB_A_FOOTPRINTING_LAB/part-1.md"
+    },
+    {
+      "name": "part-2.md",
+      "path": "Labs/HTB_A_FOOTPRINTING_LAB/part-2.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Labs/HTB_A_FOOTPRINTING_LAB/part-2.md",
+      "title": "part-2",
+      "headers": [
+        "Second part",
+        "Table of Contents",
+        "Objective",
+        "`subject :`",
+        "`Hint: `",
+        "Initial Reconnaissance",
+        "Nmap Scan",
+        "`resolution :`",
+        "Open Ports Analysis",
+        "Service Enumeration",
+        "SMB Enumeration",
+        "`enum4linux-ng output :`",
+        "NFS Enumeration",
+        "Credential Discovery",
+        "Exploitation",
+        "SMB Access with Credentials",
+        "RDP Connection",
+        "SQL Server Access",
+        "Flag Capture"
+      ],
+      "keywords": [
+        "4. Cannot connect with no credentials",
+        "Hint: ",
+        "1. SMB is confirmed active ",
+        "5. SMB server data",
+        "subject :",
+        "enum4linux-ng",
+        "resolution :",
+        "-A",
+        "3. SMB signing is not required",
+        "Databases > accounts > dbo.devsacc",
+        "enum4linux-ng output :",
+        "2. SMB Preferred dialect is 3.0 "
+      ],
+      "content": "## Second part\n\n### Table of Contents\n1. [Objective](#objective)\n2. [Initial Reconnaissance](#initial-reconnaissance)\n  - [Nmap Scan](#nmap-scan)\n  - [Open Ports Analysis](#open-ports-analysis)\n3. [Service Enumeration](#service-enumeration)\n  - [SMB Enumeration](#smb-enumeration)\n  - [NFS Enumeration](#nfs-enumeration)\n  - [Credential Discovery](#credential-discovery)\n4. [Exploitation](#exploitation)\n  - [SMB Access with Credentials](#smb-access-with-credentials)\n  - [RDP Connection](#rdp-connec",
+      "size": 15913,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Labs/HTB_A_FOOTPRINTING_LAB/part-2.md"
+    },
+    {
+      "name": "part-3.md",
+      "path": "Labs/HTB_A_FOOTPRINTING_LAB/part-3.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Labs/HTB_A_FOOTPRINTING_LAB/part-3.md",
+      "title": "Third part",
+      "headers": [
+        "Third part",
+        "Table of Contents",
+        "Objective",
+        "`subject :`",
+        "`resolution :`",
+        "Initial Reconnaissance",
+        "TCP Enumeration",
+        "Enumeration (TCP)",
+        "Port Analysis",
+        "SSH Enumeration",
+        "general",
+        "key exchange algorithms",
+        "host-key algorithms",
+        "encryption algorithms (ciphers)",
+        "message authentication code algorithms",
+        "fingerprints",
+        "algorithm recommendations (for OpenSSH 8.2)",
+        "additional info",
+        "general",
+        "IMAP/POP3 Enumeration",
+        "SNMP Exploitation",
+        "UDP Enumeration",
+        "SNMP Enumeration",
+        "Community String Discovery",
+        "Credential Extraction",
+        "Mail Server Access",
+        "IMAPS Connection",
+        "Exploit credentials",
+        "Mailbox Enumeration",
+        "SSH Key Discovery",
+        "System Access",
+        "SSH Key Configuration",
+        "SSH Connection",
+        "System Reconnaissance",
+        "Database Access",
+        "MySQL Connection",
+        "Database Enumeration",
+        "Flag Capture"
+      ],
+      "keywords": [
+        "list",
+        "ssh-keygen",
+        "ssh",
+        "snmpwalk",
+        "show columns from users;",
+        "tree",
+        "use users;",
+        "SELECT",
+        "select",
+        "show databases;",
+        "[backup]",
+        "subject :",
+        "* FROM users WHERE username LIKE",
+        "resolution :",
+        "fetch"
+      ],
+      "content": "# Third part\n\n### Table of Contents\n1. [Objective](#objective)\n2. [Initial Reconnaissance](#initial-reconnaissance)\n  - [TCP Enumeration](#tcp-enumeration)\n  - [Port Analysis](#port-analysis)\n  - [SSH Enumeration](#ssh-enumeration)\n  - [IMAP/POP3 Enumeration](#imappop3-enumeration)\n  - [UDP Enumeration](#udp-enumeration)\n3. [SNMP Exploitation](#snmp-exploitation)\n  - [SNMP Enumeration](#snmp-enumeration)\n  - [Community String Discovery](#community-string-discovery)\n  - [Credential Extraction](#c",
+      "size": 43119,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Labs/HTB_A_FOOTPRINTING_LAB/part-3.md"
+    },
+    {
+      "name": "readme.md",
+      "path": "Labs/HTB_A_FOOTPRINTING_LAB/readme.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Labs/HTB_A_FOOTPRINTING_LAB/readme.md",
+      "title": "readme",
+      "headers": [
+        "[First Part](./part-1.md)",
+        "[Second Part](./part-2.md)",
+        "[Third Part](./part-3.md)"
+      ],
+      "keywords": [
+        ".ssh",
+        "/TechSupport",
+        "ssh-keygen",
+        "id_rsa",
+        "snmpwalk",
+        "openssl s_client",
+        "accounts",
+        "onesixtyone",
+        "tom:NMds732Js2761",
+        "curl",
+        "/home/flag/flag.txt",
+        "users",
+        "sa:87N1ns@slls83",
+        "alex:lol123!mD",
+        "public",
+        "ceil:qwer1234",
+        "backup"
+      ],
+      "content": "\n<h1 align=\"center\">Footprinting Lab</h1>\n<p align=\"center\">\n  <img src=\"https://github.com/ftTower/ftTower/blob/main/assets/Cybersec-Portfolio/Labs/HTB_A_FOOTPRINTING_LAB/banner.png\" alt=\"Banner\">\n</p>\n\n---\n<h1 align=\"center\">Table of Contents</h1>\n\n## [First Part](./part-1.md)\n**Target:** DNS Server (10.129.11.228)  \n**Objective:** Enumerate the internal DNS server and retrieve the flag.txt file  \n**Key Techniques:**\n- Nmap reconnaissance identifying FTP (21, 2121), SSH (22), and DNS (53) serv",
+      "size": 3183,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Labs/HTB_A_FOOTPRINTING_LAB/readme.md"
+    },
+    {
+      "name": "protocol.md",
+      "path": "Utils/templates/protocol.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Utils/templates/protocol.md",
+      "title": "protocol",
+      "headers": [
+        "",
+        "📋 Protocol Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# \n\n![Banner]()\n\n---\n\n## 📋 Protocol Information\n\n| Property | Details |\n|----------|---------|\n| **Type** |  |\n| **Port** |  |\n| **OS** |  |\n| **Purpose** |  |\n| **Sub-Protocols** |  |\n| **Status** |  |\n| **OSI Layer** |  |\n| **RFC** | [RFC ]()  |\n\n---\n\n## 🔨 Usage\n\n\n## 📕 Cross-References\n\n1. []()\n\n---\n\n## 🔗 External-Ressources\n\n- []()\n",
+      "size": 349,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Utils/templates/protocol.md"
+    },
+    {
+      "name": "tool.md",
+      "path": "Utils/templates/tool.md",
+      "full_path": "/home/tauer/Documents/Orbit/CyberSecurity-Portfolio/Utils/templates/tool.md",
+      "title": "tool",
+      "headers": [
+        "",
+        "📋 Tool Information",
+        "🔨 Usage",
+        "📕 Cross-References",
+        "🔗 External-Ressources"
+      ],
+      "keywords": [],
+      "content": "# \n\n![Banner]()\n\n---\n\n## 📋 Tool Information\n\n| Property | Details |\n|----------|---------|\n| **Type** |  |\n| **Category** |  |\n| **Platform** |  |\n| **Purpose** |  |\n| **Documentation** | [Docs]()  |\n\n---\n\n## 🔨 Usage\n\n\n## 📕 Cross-References\n\n1. []()\n\n---\n\n## 🔗 External-Ressources\n\n- []()\n",
+      "size": 301,
+      "type": ".md",
+      "github_url": "https://github.com/ftTower/CyberSecurity-Portfolio/blob/main/Utils/templates/tool.md"
+    }
+  ],
+  "tree": {
+    "name": "CyberSecurity-Portfolio",
+    "path": ".",
+    "type": "directory",
+    "children": [
+      {
+        "name": "Certifications",
+        "path": "Certifications",
+        "type": "directory",
+        "children": [
+          {
+            "name": "HTB Academy Student Transcript.pdf",
+            "path": "Certifications/HTB Academy Student Transcript.pdf",
+            "type": "file",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Courses",
+        "path": "Courses",
+        "type": "directory",
+        "children": [
+          {
+            "name": "Protocols",
+            "path": "Courses/Protocols",
+            "type": "directory",
+            "children": [
+              {
+                "name": "IMAP",
+                "path": "Courses/Protocols/IMAP",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "configuration.md",
+                    "path": "Courses/Protocols/IMAP/configuration.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/IMAP/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/IMAP/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "MSSQL",
+                "path": "Courses/Protocols/MSSQL",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "configuration.md",
+                    "path": "Courses/Protocols/MSSQL/configuration.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/MSSQL/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/MSSQL/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "NFS",
+                "path": "Courses/Protocols/NFS",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/NFS/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/NFS/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "POP3",
+                "path": "Courses/Protocols/POP3",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/POP3/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/POP3/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "R-Services",
+                "path": "Courses/Protocols/R-Services",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/R-Services/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/R-Services/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "RDP",
+                "path": "Courses/Protocols/RDP",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/RDP/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/RDP/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Rsync",
+                "path": "Courses/Protocols/Rsync",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/Rsync/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/Rsync/readme.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "scripts",
+                    "path": "Courses/Protocols/Rsync/scripts",
+                    "type": "directory",
+                    "children": [
+                      {
+                        "name": "backup.sh",
+                        "path": "Courses/Protocols/Rsync/scripts/backup.sh",
+                        "type": "file",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "SMB",
+                "path": "Courses/Protocols/SMB",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "configuration.md",
+                    "path": "Courses/Protocols/SMB/configuration.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/SMB/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/SMB/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "SNMP",
+                "path": "Courses/Protocols/SNMP",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/SNMP/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/SNMP/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "SSH",
+                "path": "Courses/Protocols/SSH",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "configuration.md",
+                    "path": "Courses/Protocols/SSH/configuration.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/SSH/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/SSH/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "WMI",
+                "path": "Courses/Protocols/WMI",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/WMI/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/WMI/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "WinRM",
+                "path": "Courses/Protocols/WinRM",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "footprinting.md",
+                    "path": "Courses/Protocols/WinRM/footprinting.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Protocols/WinRM/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "readme.md",
+                "path": "Courses/Protocols/readme.md",
+                "type": "file",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Tools",
+            "path": "Courses/Tools",
+            "type": "directory",
+            "children": [
+              {
+                "name": "Metasploit",
+                "path": "Courses/Tools/Metasploit",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Tools/Metasploit/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Nmap",
+                "path": "Courses/Tools/Nmap",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Tools/Nmap/readme.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Web",
+            "path": "Courses/Web",
+            "type": "directory",
+            "children": [
+              {
+                "name": "Wordpress",
+                "path": "Courses/Web/Wordpress",
+                "type": "directory",
+                "children": [
+                  {
+                    "name": "enumeration.md",
+                    "path": "Courses/Web/Wordpress/enumeration.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "readme.md",
+                    "path": "Courses/Web/Wordpress/readme.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "structure.md",
+                    "path": "Courses/Web/Wordpress/structure.md",
+                    "type": "file",
+                    "children": []
+                  },
+                  {
+                    "name": "users_roles.md",
+                    "path": "Courses/Web/Wordpress/users_roles.md",
+                    "type": "file",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "readme.md",
+                "path": "Courses/Web/readme.md",
+                "type": "file",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "readme.md",
+            "path": "Courses/readme.md",
+            "type": "file",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Labs",
+        "path": "Labs",
+        "type": "directory",
+        "children": [
+          {
+            "name": "HTB_A_FOOTPRINTING_LAB",
+            "path": "Labs/HTB_A_FOOTPRINTING_LAB",
+            "type": "directory",
+            "children": [
+              {
+                "name": "part-1.md",
+                "path": "Labs/HTB_A_FOOTPRINTING_LAB/part-1.md",
+                "type": "file",
+                "children": []
+              },
+              {
+                "name": "part-2.md",
+                "path": "Labs/HTB_A_FOOTPRINTING_LAB/part-2.md",
+                "type": "file",
+                "children": []
+              },
+              {
+                "name": "part-3.md",
+                "path": "Labs/HTB_A_FOOTPRINTING_LAB/part-3.md",
+                "type": "file",
+                "children": []
+              },
+              {
+                "name": "readme.md",
+                "path": "Labs/HTB_A_FOOTPRINTING_LAB/readme.md",
+                "type": "file",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "readme.md",
+            "path": "Labs/readme.md",
+            "type": "file",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Utils",
+        "path": "Utils",
+        "type": "directory",
+        "children": [
+          {
+            "name": "templates",
+            "path": "Utils/templates",
+            "type": "directory",
+            "children": [
+              {
+                "name": "protocol.md",
+                "path": "Utils/templates/protocol.md",
+                "type": "file",
+                "children": []
+              },
+              {
+                "name": "tool.md",
+                "path": "Utils/templates/tool.md",
+                "type": "file",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "wordslist",
+            "path": "Utils/wordslist",
+            "type": "directory",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "readme.md",
+        "path": "readme.md",
+        "type": "file",
+        "children": []
+      }
+    ]
+  },
+  "search_index": []
+}

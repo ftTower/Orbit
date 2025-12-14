@@ -10,7 +10,6 @@ update:
 		git clone https://github.com/ftTower/CyberSecurity-Portfolio.git; \
 	fi
 
-
 search:
 	@make update
 	@echo "🔍 Indexing portfolio..."

@@ -51,25 +51,45 @@ def search():
         total_score = 0
         
         for term in query_terms:
-            # Filename match: 100 points
-            if term in file_info['name'].lower():
+            filename_lower = file_info['name'].lower()
+            path_lower = file_info['path'].lower()
+            
+            # Exact match on parent folder name + readme: HIGHEST priority (300 points)
+            # Example: searching "ssh" should prioritize "SSH/readme.md" over "SSH/footprinting.md"
+            path_parts = path_lower.split(os.sep)
+            if len(path_parts) >= 2:
+                parent_folder = path_parts[-2]  # Get immediate parent folder
+                if parent_folder == term and (filename_lower == 'readme.md' or filename_lower == 'readme'):
+                    total_score += 300
+            
+            # Exact filename match (without extension): 200 points
+            filename_no_ext = os.path.splitext(filename_lower)[0]
+            if filename_no_ext == term:
+                total_score += 200
+            # Partial filename match: 100 points
+            elif term in filename_lower:
                 total_score += 100
             
-            # Path/folder match: 50 points
-            path_lower = file_info['path'].lower()
-            for folder in path_lower.split(os.sep):
-                if term in folder:
-                    total_score += 50
+            # Exact folder match: 150 points
+            for folder in path_parts:
+                if folder == term:
+                    total_score += 150
                     break
+            # Partial folder match: 50 points
+            else:
+                for folder in path_parts:
+                    if term in folder:
+                        total_score += 50
+                        break
             
-            # Content match: 10 points per occurrence
+            # Content match: 5 points per occurrence (reduced from 10)
             content = file_info.get('content', '').lower()
             occurrences = content.count(term)
-            total_score += occurrences * 10
+            total_score += occurrences * 5
             
-            # Title match: 75 points
+            # Title match: 120 points
             if term in file_info.get('title', '').lower():
-                total_score += 75
+                total_score += 120
                 
             # Headers match: 30 points
             for header in file_info.get('headers', []):
@@ -95,9 +115,23 @@ def search():
 
 @app.route('/api/file/<path:file_path>')
 def get_file(file_path):
-    """Get file details"""
+    """Get file details with full content"""
     for file_info in index_data.get("files", []):
         if file_info['path'] == file_path:
+            # Read full file content
+            full_path = Path(file_info['full_path'])
+            if full_path.exists():
+                try:
+                    with open(full_path, 'r', encoding='utf-8') as f:
+                        full_content = f.read()
+                    # Return file info with full content
+                    return jsonify({
+                        **file_info,
+                        'content': full_content
+                    })
+                except Exception as e:
+                    print(f"Error reading file: {e}")
+                    return jsonify(file_info)
             return jsonify(file_info)
     return jsonify({"error": "File not found"}), 404
 

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberSecurity Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=12">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=38">
     <script>
         // Random background selection
         const randomBg = Math.floor(Math.random() * 5) + 1;
         document.documentElement.style.setProperty('--random-bg', `url('/static/backgrounds/${randomBg}background.png')`);
     </script>
-    <script src="{{ url_for('static', filename='app.js') }}?v=14"></script>
+    <script src="{{ url_for('static', filename='app.js') }}?v=30"></script>
 </head>
 <body>
     <!-- Bento Grid Container -->
@@ -18,38 +18,9 @@
         
         <!-- Case 0: Empty (Top Left) -->
         <div class="bento-card empty-card glass">
-            <div class="card-inner">
-                <div class="empty-state">
-                    <div class="empty-icon">⚡</div>
-                    <p>À venir...</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Case 2: Search Bar (Top Center) -->
-        <div class="bento-card search-card glass">
-            <div class="card-inner">
-                <div class="search-wrapper">
-                    <div class="search-icon-premium">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                    </div>
-                    <div class="search-tags-container" id="search-tags-container"></div>
-                    <div class="search-input-wrapper">
-                        <input type="text" id="search-input" autocomplete="off" autofocus>
-                        <div class="search-placeholder" id="search-placeholder">
-                            <span class="placeholder-static">Rechercher</span>
-                            <span class="placeholder-suggestions" id="placeholder-suggestions">
-                                <span class="suggestion-word active">protocoles</span>
-                                <span class="suggestion-word">configurations</span>
-                                <span class="suggestion-word">scripts</span>
-                                <span class="suggestion-word">documentation</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div id="search-results" class="search-results"></div>
+            <div id="current-top-file" class="current-top-file-display">
+                <div class="empty-state-mini">
+                    <p>Aucun résultat pour le moment</p>
                 </div>
             </div>
         </div>
@@ -93,6 +64,29 @@
         <!-- Case 1: Map (Main Canvas - Bottom Left, Large) -->
         <div class="bento-card map-card glass">
             <div class="card-inner">
+                <!-- Search Bar Overlay -->
+                <div class="search-wrapper search-overlay">
+                    <div class="search-icon-premium">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <div class="search-tags-container" id="search-tags-container"></div>
+                    <div class="search-input-wrapper">
+                        <input type="text" id="search-input" autocomplete="off" autofocus>
+                        <div class="search-placeholder" id="search-placeholder">
+                            <span class="placeholder-static">Rechercher</span>
+                            <span class="placeholder-suggestions" id="placeholder-suggestions">
+                                <span class="suggestion-word active">protocoles</span>
+                                <span class="suggestion-word">configurations</span>
+                                <span class="suggestion-word">scripts</span>
+                                <span class="suggestion-word">documentation</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="search-results" class="search-results"></div>
+                </div>
                 <div id="canvas" class="canvas">
                     <div id="map-container" class="map-container"></div>
                     <div class="map-controls">
@@ -131,6 +125,5 @@
         <div class="gradient-orb orb-3"></div>
     </div>
 
-    <script src="{{ url_for('static', filename='app.js') }}?v=10"></script>
 </body>
 </html>
