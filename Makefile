@@ -13,9 +13,9 @@ update:
 search:
 	@make update
 	@echo "🔍 Indexing portfolio..."
-	@python3 search_engine/indexer.py
+	@venv/bin/python search_engine/indexer.py
 	@echo "🚀 Starting search engine..."
-	@python3 search_engine/server.py
+	@venv/bin/python search_engine/server.py
 
 clean:
 	@rm -rf CyberSecurity-Portfolio
